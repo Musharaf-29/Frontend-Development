@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Form</title>
+</head>
+<style>
+    body {
+        background-color: #f5fafa;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+    
+    header {
+        background-color: #1976d2;
+        /* Professional blue */
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    
+    p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 20px;
+        color: #444;
+    }
+    
+    form {
+        background-color: #ffffff;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 35px 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    }
+    
+    form label {
+        display: block;
+        margin: 20px 0 8px;
+        font-weight: 600;
+        color: #222;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form input[type="date"],
+    form input[type="password"],
+    form select,
+    form textarea,
+    form input[type="file"] {
+        width: 100%;
+        padding: 12px;
+        margin-top: 4px;
+        border: 1px solid #ccd6dd;
+        border-radius: 6px;
+        background-color: #fdfdfd;
+        box-sizing: border-box;
+        font-size: 15px;
+        transition: border-color 0.3s;
+    }
+    
+    form input[type="text"]:focus,
+    form input[type="email"]:focus,
+    form input[type="tel"]:focus,
+    form input[type="date"]:focus,
+    form input[type="password"]:focus,
+    form select:focus,
+    form textarea:focus {
+        border-color: #1976d2;
+        outline: none;
+    }
+    
+    form input[type="radio"],
+    form input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    
+    form textarea {
+        height: 100px;
+        resize: vertical;
+    }
+    
+    form input[type="submit"],
+    form input[type="reset"] {
+        background-color: #1976d2;
+        color: #fff;
+        padding: 12px 30px;
+        margin-top: 30px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+    }
+    
+    form input[type="submit"]:hover,
+    form input[type="reset"]:hover {
+        background-color: #0d47a1;
+    }
+</style>
+
+
+<body>
+    <header>
+        <h1>Basic HTML Register Form</h1>
+    </header>
+    <p>This is a simple HTML form to collect user information.</p>
+    <form action="\css\thankyou.html" method="get" target="_main">
+
+        <br>
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" name="fname">
+        </br>
+        <br>
+        <label for="lname">Last name :</label>
+        <input type="text" id="lname" name="lname">
+        </br>
+        <br>
+        <label for="dob">Date Of Birth :</label>
+        <input type="date" id="dob" name="dob">
+        </br>
+        <br>
+        <label for="gender">Gender :</label>
+        <label><input type="radio" name="gender" value="male">Male</label>
+        <label><input type="radio" name="gender" value="female">Female</label>
+        </br>
+        <br>
+        <label for="branch">Branch :</label>
+        <select id="branch" name="branch">
+            <option value="cse">CSE</option>
+            <option value="csm">CSM</option>
+            <option value="csm">CSD</option>
+            <option value="ece">ECE</option>
+            <option value="Mech">Mech</option>
+            <option value="eee">EEE</option>
+        </select>
+        </br>
+        <br>
+        <label for="phone">Mobile No :</label>
+        <input type="tel" id="number" name="number" maxlength="10">
+        </br>
+        <br>
+        <labe for="email">Email :</labe>
+        <input type="email" id="email" name="email">
+        </br>
+        <br>
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password">
+        </br>
+        <br>
+        <label for="cpassword">Conform password :</label>
+        <input type="password" id="cpassword" name="cpassword">
+        </br>
+        <br>
+        <label for="resume">Upload Resume :</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        </br>
+        <br>
+        <label for="resume">Languages Known :</label>
+        <label><input type="checkbox" name="telugu" value="telugu">Telugu</label>
+        <label><input type="checkbox" name="hindi" value="hindi">Hindi</label>
+        <label><input type="checkbox" name="tamil" value="tamil">Tamil</label>
+        <label><input type="checkbox" name="kannada" value="kannada">Kannada</label>
+        <label><input type="checkbox" name="english" value="english">English</label>
+        </br>
+        <br>
+        <label for="address">Address :</label>
+        <textarea id="address" name="address"></textarea>
+        </br>
+
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </br>
+    </form>
+</body>
+
+</html>

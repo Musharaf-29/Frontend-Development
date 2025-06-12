@@ -1,0 +1,46 @@
+<style>
+    /* 1. Descendant combinator - selects all <p> inside .parent (any level) */
+    
+    .parent p {
+        color: blue;
+    }
+    /* 2. Child combinator - selects only <p> that are direct children of .child */
+    
+    .child>p {
+        color: red;
+        font-weight: bold;
+    }
+    /* 3. Adjacent sibling combinator - selects <p> immediately after <h2> */
+    
+    h2+p {
+        background-color: yellow;
+    }
+    /* 4. General sibling combinator - selects all <p> after <span> with the same parent */
+    
+    span~p {
+        font-style: italic;
+    }
+</style>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Combinators Example</title>
+</head>
+
+<body>
+    <div class="parent">
+        <p>This is a descendant.</p>
+        <div class="child">
+            <p>This is a child.</p>
+        </div>
+        <h2>Heading</h2>
+        <p>This is adjacent sibling.</p>
+        <span>This is a general sibling.</span>
+        <p>This is another general sibling.</p>
+    </div>
+</body>
+
+</html>
