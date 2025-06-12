@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .box-model1 {
+            position: relative;
+            /* Make Box1 the reference for child positions */
+            width: 50px;
+            padding: 300px;
+            margin: 30px;
+            background-color: blue;
+        }
+        
+        .box-model2 {
+            position: absolute;
+            top: 105px;
+            left: 100px;
+            width: 50px;
+            padding: 200px;
+            margin: 30px;
+            background-color: red;
+        }
+        
+        .box-model3 {
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            width: 50px;
+            padding: 100px;
+            margin: 30px;
+            background-color: green;
+        }
+        
+        .box-model4 {
+            position: absolute;
+            top: 250px;
+            left: 250px;
+            width: 50px;
+            padding: 50px;
+            margin: 30px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box-model1">Box1
+        <div class="box-model2">Box2</div>
+        <div class="box-model3">Box3</div>
+        <div class="box-model4">Box4</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .box {
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            margin: 20px;
+        }
+        
+        .static-box {
+            position: static;
+            background-color: #2196F3;
+        }
+        
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: #4CAF50;
+        }
+        
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            left: 300px;
+            background-color: #FF5722;
+        }
+        
+        .fixed-box {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #9C27B0;
+            z-index: 10;
+        }
+        
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: #FFC107;
+            color: black;
+        }
+        
+        .container {
+            position: relative;
+            height: 1000px;
+            border: 2px dashed #aaa;
+            margin: 40px;
+            padding: 20px;
+        }
+        
+        .spacer {
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="fixed-box box">Fixed</div>
+
+    <div class="container">
+        <div class="sticky-box box">Sticky(scroll to see effect)</div>
+        <div class="static-box box">Static</div>
+        <div class="relative-box box">Relative</div>
+        <div class="absolute-box box">Absolute</div>
+        <div class="spacer"></div>
+    </div>
+
+</body>
+
+</html>
